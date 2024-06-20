@@ -1,16 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/output.css">
-    <title>No Internet Connection</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internet Connection Issue</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #02243B;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .steps {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .steps ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+
+  .steps li {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+  }
+</style>
 </head>
 <body>
-    <div class="flex h-screen w-screen bg-slate-800">
-        <div class="py-12 px-12 text-3xl bg-white">
-            <h1 class="text-black">Please Connect Your Device to Internet</h1>
-        </div>
+  <div class="container">
+    <h1>Please check your internet connection</h1>
+    <p>Your device is currently not connected to the internet. Follow these steps to reconnect:</p>
+    <div class="steps">
+      <ol>
+        <li>Make sure your Wi-Fi or Ethernet cable is securely connected to your device.</li>
+        <li>Restart your modem/router.</li>
+        <li>If you are using Wi-Fi, try moving closer to the router or access point.</li>
+        <li>Check for any local network outages or issues with your Internet Service Provider (ISP).</li>
+      </ol>
     </div>
+    <a href="#" class="button">Retry</a>
+  </div>
 </body>
 </html>
